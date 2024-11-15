@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container text-center mt-5">
+    <form method="POST">
+        {% csrf_token %}
+        <h2>Are you want to delete the movie?</h2>
+        <input type="submit">
+    </form>
+</div>
+{% endblock %}
